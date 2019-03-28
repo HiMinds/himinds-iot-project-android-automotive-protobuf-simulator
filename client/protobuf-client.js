@@ -23,7 +23,7 @@ const engineData = ({
 client.connect(port, ip, function() {
 	console.log('Connected');
    client.write(buf);
-   client.destroy(); 
+   client.destroy();
 });
 
 client.on('close', function() {
