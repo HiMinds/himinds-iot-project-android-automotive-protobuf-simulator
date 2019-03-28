@@ -1,0 +1,6 @@
+message Engine {
+  required int32 engine_rpm  = 1;
+  required float vehicle_speed_sensor = 2;
+  required float intake_air_temperature = 3;
+  required float engine_oil_temperature = 4;
+}
