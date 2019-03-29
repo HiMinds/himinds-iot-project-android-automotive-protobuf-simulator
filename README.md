@@ -1,9 +1,21 @@
 # himinds-iot-project-android-automotive-protobuf-simulator
 
+Client/Server protobuf example for OBD-II data.
+
+### protobuf-schema object
+In folder /proto you will find the  protobuf-schema object with a few OBD-II values.
+
+```
+message Engine {
+  required int32 engine_rpm  = 1;
+  required float vehicle_speed_sensor = 2;
+  required float intake_air_temperature = 3;
+  required float engine_oil_temperature = 4;
+}
+
+```
 
 ## Installation
-
-
 
 ```
 cd client
@@ -43,15 +55,3 @@ Connection closed
 
 
 
-## protobuf-schema object
-In folder /proto you will find the  protobuf-schema object
-
-```
-message Engine {
-  required int32 engine_rpm  = 1;
-  required float vehicle_speed_sensor = 2;
-  required float intake_air_temperature = 3;
-  required float engine_oil_temperature = 4;
-}
-
-```
